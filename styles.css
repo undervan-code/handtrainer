@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  border: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+background-color: #1F1F1F;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.98'%3E%3Ccircle fill='%231F1F1F' cx='50' cy='0' r='50'/%3E%3Cg fill='%231e1e1e' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%231d1d1d' cx='50' cy='100' r='50'/%3E%3Cg fill='%231b1b1b' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a1a1a' cx='50' cy='200' r='50'/%3E%3Cg fill='%23191919' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23181818' cx='50' cy='300' r='50'/%3E%3Cg fill='%23171717' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23161616' cx='50' cy='400' r='50'/%3E%3Cg fill='%23141414' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23131313' cx='50' cy='500' r='50'/%3E%3Cg fill='%23121212' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23101010' cx='50' cy='600' r='50'/%3E%3Cg fill='%230e0e0e' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%230d0d0d' cx='50' cy='700' r='50'/%3E%3Cg fill='%230b0b0b' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23090909' cx='50' cy='800' r='50'/%3E%3Cg fill='%23060606' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23040404' cx='50' cy='900' r='50'/%3E%3Cg fill='%23020202' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23000000' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: contain;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+}
+
+.timer {
+  width: 70%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 0;}
+
+.timer input {
+  width: calc(100% - 20px);
+  height: 200px;
+  font-size: 200px;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  border: 5px solid #e0e0e0;
+  border-color: grey;
+  border-radius: 30px;
+  color: white;
+  
+}
+
+
+.timercontrol {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  width: 100%;
+  max-width: 600px;
+  padding: 1px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column; /* Añadir esta propiedad para cambiar el orden de los elementos */
+  align-items: center;
+  width: 45%;
+}
+
+.team input {
+  font-size: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.team p {
+  font-size: 96px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.team button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 32px;
+  margin: 5px;
+}
+
+.team .score-controls {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+  flex: 1;
+  align-items: center;
+}
+#teamName1 {
+  order: 2; /* Definir el orden en que debe aparecer el elemento */
+}
+#teamName2 {
+  order: 2; /* Definir el orden en que debe aparecer el elemento */
+}
+
+
+button {
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color:black;
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Agregar estilos para los botones de control del temporizador */
+.timercontrol button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 100%;
+    width: 60px;
+    height: 60px;
+    transition: background-color 0.3s, border 0.3s;
+    opacity: 0.2;
+}
+
+.timercontrol button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 0.7;
+}
+
+.timercontrol button:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    opacity: 0.5;
+}
+
+.timercontrol button:focus {
+    outline: none;
+}
+
+/* Agregar estilos para el botón de pausa */
+#stop {
+    display: block;
+}
+
+.timer-running #start {
+    display: none;
+}
+
+.timer-running #stop {
+    display: block;
+}
+
+
+
+/* Añadir estilos para los controles de puntuación */
+.score-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  order: 1; /* Definir el orden en que debe aparecer el elemento */
+  
+}
+
+
+.score-controls button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 32px;
+    margin: 5px;
+    opacity: 0.2;
+}
+
+.score-controls .score {
+    font-size: 300px;
+    margin: 0;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.team input {
+    font-size: 24px;
+    background-color: black;
+    text-align: center;
+    padding: 5px 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.team .score-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.team .score-controls button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 32px;
+    margin: 5px;
+}
+
+.team .score {
+  font-size: 150px;
+  font-weight: bold;
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+  }
+.score-controls .score {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+  .timer {
+  width: 90%;
+    height: 30%;
+    margin-top: 10%;
+  }
+
+.timer input {
+  height: 200px;
+  font-size: 110px;  
+}
+.scoreboard {
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-around;
+  }
+
+.team {
+    width: 100%;
+  }
+
+.team input {
+    font-size: 18px;
+  }
+
+.team .score {
+    font-size: 150px;
+  }
+
+.team button {
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+
+.team .score-controls {
+    margin-top: 5px;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.blink {
+  animation: blink 2s infinite;
+}
