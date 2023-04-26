@@ -26,7 +26,7 @@ The *Scoreboard* tool allows you to keep track of the score during handball game
 
 -**Tacticboard**
 
-The *Tacticboard* tool allows you to create and save different handball game tactics. To use the *Tacticboard*, simply select the players from the dropdown menu and drag them onto the field. You can draw lines and arrows to indicate movements and strategies, and you can save your tactics by clicking the Save button.
+The *Tacticboard* tool allows you to create and save different handball game tactics. To use the *Tacticboard*, simply select the players from the dropdown menu and drag them onto the field. You can draw lines and arrows to indicate movements and strategies.
 
 -**Timer**
 
