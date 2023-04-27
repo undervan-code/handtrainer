@@ -1,6 +1,6 @@
 # Handtrainer Tools
 
-Handtrainer Tools is a collection of three different tools: a scoreboard, tacticboard, and timer, designed to help handball coaches and players during practice and games.
+Handtrainer Tools is a collection of three different tools: a scoreboard, tacticboard and timer, designed to help handball coaches and players during training and matches.
 
 ## Table of Contents
 
